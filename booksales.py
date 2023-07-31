@@ -4,10 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd
 
-# jovian.commit(project='booksales')
-
-
 # This function is used to get the BS4 doc by providing the page number
+
+
 def get_doc(page_number):
     time.sleep(2)
     url = 'https://www.amazon.in/gp/bestsellers/books/ref=zg_bs_pg_{}?ie=UTF8&pg={}'.format(
